@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDatabaseModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="nvarchar" MaxLength="150" Nullable="false" />
+    <Property Name="ContextKey" Type="nvarchar" MaxLength="300" Nullable="false" />
+    <Property Name="Model" Type="varbinary(max)" Nullable="false" />
+    <Property Name="ProductVersion" Type="nvarchar" MaxLength="32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="CTable">
+    <Key>
+      <PropertyRef Name="DocumentName" />
+    </Key>
+    <Property Name="DocumentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="CollectionType" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="nvarchar" MaxLength="50" />
+    <Property Name="CollectionID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CMG" Type="nvarchar(max)" />
+    <Property Name="DisclosureLevel" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocumentType" Type="nvarchar(max)" />
+    <Property Name="DocumentTypeDetail" Type="nvarchar(max)" />
+    <Property Name="Regions" Type="nvarchar(max)" />
+    <Property Name="TopicCategories" Type="nvarchar(max)" />
+    <Property Name="PublicationCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContentTopic" Type="nvarchar" MaxLength="50" />
+    <Property Name="SearchKeywords" Type="nvarchar(max)" />
+    <Property Name="EmbeddedLinks" Type="nvarchar(max)" />
+    <Property Name="PublicationDestinations" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductLines" Type="nvarchar(max)" />
+    <Property Name="OriginalFilename" Type="nvarchar(max)" />
+    <Property Name="BusinessDefinedProperties" Type="nvarchar(max)" />
+    <Property Name="Authors" Type="nvarchar(max)" />
+    <Property Name="ContentVersion" Type="nvarchar" MaxLength="10" />
+    <Property Name="VersionLabel" Type="nvarchar" MaxLength="10" />
+    <Property Name="ProjectName" Type="nvarchar" MaxLength="50" />
+    <Property Name="CollectionMasterID" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreationDate" Type="nvarchar" MaxLength="50" />
+    <Property Name="ContentUpdateDate" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="DocMatrix">
+    <Key>
+      <PropertyRef Name="MatrixID" />
+    </Key>
+    <Property Name="MatrixID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="DateFinal" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocDiscipline" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocumentType" Type="nvarchar" MaxLength="100" />
+    <Property Name="DocumentName" Type="nvarchar" MaxLength="100" />
+    <Property Name="ProductNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocPartNumber" Type="nvarchar" MaxLength="50" />
+    <Property Name="DocServiceLevel" Type="nvarchar" MaxLength="100" />
+    <Property Name="ServiceKitPart" Type="nvarchar" MaxLength="50" />
+    <Property Name="ConcentraPDFID" Type="nvarchar" MaxLength="100" />
+    <Property Name="Languages" Type="nvarchar(max)" />
+    <Property Name="SupplyChainStrategy" Type="nvarchar" MaxLength="100" />
+    <Property Name="QRCodeURL" Type="nvarchar(max)" />
+    <Property Name="LinkDocConcentraID" Type="nvarchar" MaxLength="100" />
+    <Property Name="VideoURL" Type="nvarchar" MaxLength="50" />
+    <Property Name="Comments" Type="nvarchar(max)" />
+    <Property Name="BrightcoveLink" Type="nvarchar(max)" />
+    <Property Name="BDP" Type="nvarchar(max)" />
+    <Property Name="ProductName" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="T1">
+    <Key>
+      <PropertyRef Name="DocumentName" />
+    </Key>
+    <Property Name="DocumentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="CollectionId" Type="nvarchar" MaxLength="50" />
+    <Property Name="Language" Type="nvarchar" MaxLength="50" />
+    <Property Name="Notes" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="TopicList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="ProductSelection" Type="nvarchar" MaxLength="50" />
+    <Property Name="Web" Type="nvarchar" MaxLength="10" />
+    <Property Name="Intellifix" Type="nvarchar" MaxLength="50" />
+    <Property Name="IssueSignature" Type="nvarchar(max)" />
+    <Property Name="UG" Type="nvarchar" MaxLength="10" />
+    <Property Name="WLG" Type="nvarchar" MaxLength="10" />
+    <Property Name="SRM" Type="nvarchar" MaxLength="10" />
+    <Property Name="OnsiteInstallGuide" Type="nvarchar" MaxLength="10" />
+    <Property Name="STR" Type="nvarchar" MaxLength="10" />
+    <Property Name="WBT1_3" Type="nvarchar" MaxLength="10" />
+    <Property Name="WBT4_6" Type="nvarchar" MaxLength="10" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="ConcentraID" Type="nvarchar" MaxLength="50" />
+    <Property Name="Link" Type="nvarchar(max)" />
+    <Property Name="BrightcoveLink" Type="nvarchar(max)" />
+    <Property Name="ProductSource" Type="nvarchar(max)" />
+    <Property Name="DocumentSource" Type="nvarchar" MaxLength="50" />
+    <Property Name="Core" Type="nvarchar" MaxLength="50" />
+    <Property Name="DesignTeamNotes" Type="nvarchar(max)" />
+    <Property Name="ProjectManagerNotes" Type="nvarchar(max)" />
+    <Property Name="SMEPartnerNotes" Type="nvarchar(max)" />
+    <Property Name="ProLeEnterprise" Type="nvarchar" MaxLength="10" />
+    <Property Name="Asset" Type="nvarchar" MaxLength="50" />
+    <Property Name="DisclosureLevel" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+    <Property Name="OwnerPM" Type="nvarchar(max)" />
+    <Property Name="EmbeddedLinks" Type="nvarchar(max)" />
+    <Property Name="BDP" Type="nvarchar(max)" />
+    <Property Name="AquentGrouping" Type="nvarchar" MaxLength="100" />
+    <Property Name="Onboarded" Type="nvarchar" MaxLength="50" />
+    <Property Name="ProductTitle" Type="nvarchar" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="VidLinks">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Title" Type="nvarchar(max)" />
+    <Property Name="BrightcoveLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="YoutubeLink" Type="nvarchar" MaxLength="100" />
+    <Property Name="ConcentraID" Type="nvarchar" MaxLength="100" />
+    <Property Name="ConcentraDocTitle" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="MyDatabaseModelStoreContainer">
+    <EntitySet Name="__MigrationHistory" EntityType="Self.__MigrationHistory" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="CTable" EntityType="Self.CTable" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DocMatrix" EntityType="Self.DocMatrix" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="T1" EntityType="Self.T1" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="TopicList" EntityType="Self.TopicList" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VidLinks" EntityType="Self.VidLinks" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

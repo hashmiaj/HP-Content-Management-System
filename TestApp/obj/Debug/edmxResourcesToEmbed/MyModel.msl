@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MyDatabaseModelStoreContainer" CdmEntityContainer="Database1Entities">
+    <EntitySetMapping Name="C__MigrationHistory">
+      <EntityTypeMapping TypeName="MyDatabaseModel.C__MigrationHistory">
+        <MappingFragment StoreEntitySet="__MigrationHistory">
+          <ScalarProperty Name="ProductVersion" ColumnName="ProductVersion" />
+          <ScalarProperty Name="Model" ColumnName="Model" />
+          <ScalarProperty Name="ContextKey" ColumnName="ContextKey" />
+          <ScalarProperty Name="MigrationId" ColumnName="MigrationId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="T1">
+      <EntityTypeMapping TypeName="MyDatabaseModel.T1">
+        <MappingFragment StoreEntitySet="T1">
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="CollectionId" ColumnName="CollectionId" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CTables">
+      <EntityTypeMapping TypeName="MyDatabaseModel.CTable">
+        <MappingFragment StoreEntitySet="CTable">
+          <ScalarProperty Name="ContentUpdateDate" ColumnName="ContentUpdateDate" />
+          <ScalarProperty Name="CreationDate" ColumnName="CreationDate" />
+          <ScalarProperty Name="CollectionMasterID" ColumnName="CollectionMasterID" />
+          <ScalarProperty Name="ProjectName" ColumnName="ProjectName" />
+          <ScalarProperty Name="VersionLabel" ColumnName="VersionLabel" />
+          <ScalarProperty Name="ContentVersion" ColumnName="ContentVersion" />
+          <ScalarProperty Name="Authors" ColumnName="Authors" />
+          <ScalarProperty Name="BusinessDefinedProperties" ColumnName="BusinessDefinedProperties" />
+          <ScalarProperty Name="OriginalFilename" ColumnName="OriginalFilename" />
+          <ScalarProperty Name="ProductLines" ColumnName="ProductLines" />
+          <ScalarProperty Name="PublicationDestinations" ColumnName="PublicationDestinations" />
+          <ScalarProperty Name="EmbeddedLinks" ColumnName="EmbeddedLinks" />
+          <ScalarProperty Name="SearchKeywords" ColumnName="SearchKeywords" />
+          <ScalarProperty Name="ContentTopic" ColumnName="ContentTopic" />
+          <ScalarProperty Name="PublicationCode" ColumnName="PublicationCode" />
+          <ScalarProperty Name="TopicCategories" ColumnName="TopicCategories" />
+          <ScalarProperty Name="Regions" ColumnName="Regions" />
+          <ScalarProperty Name="DocumentTypeDetail" ColumnName="DocumentTypeDetail" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DisclosureLevel" ColumnName="DisclosureLevel" />
+          <ScalarProperty Name="CMG" ColumnName="CMG" />
+          <ScalarProperty Name="CollectionID" ColumnName="CollectionID" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="CollectionType" ColumnName="CollectionType" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TopicLists">
+      <EntityTypeMapping TypeName="MyDatabaseModel.TopicList">
+        <MappingFragment StoreEntitySet="TopicList">
+          <ScalarProperty Name="ProductTitle" ColumnName="ProductTitle" />
+          <ScalarProperty Name="Onboarded" ColumnName="Onboarded" />
+          <ScalarProperty Name="AquentGrouping" ColumnName="AquentGrouping" />
+          <ScalarProperty Name="BDP" ColumnName="BDP" />
+          <ScalarProperty Name="EmbeddedLinks" ColumnName="EmbeddedLinks" />
+          <ScalarProperty Name="OwnerPM" ColumnName="OwnerPM" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="DisclosureLevel" ColumnName="DisclosureLevel" />
+          <ScalarProperty Name="Asset" ColumnName="Asset" />
+          <ScalarProperty Name="ProLeEnterprise" ColumnName="ProLeEnterprise" />
+          <ScalarProperty Name="SMEPartnerNotes" ColumnName="SMEPartnerNotes" />
+          <ScalarProperty Name="ProjectManagerNotes" ColumnName="ProjectManagerNotes" />
+          <ScalarProperty Name="DesignTeamNotes" ColumnName="DesignTeamNotes" />
+          <ScalarProperty Name="Core" ColumnName="Core" />
+          <ScalarProperty Name="DocumentSource" ColumnName="DocumentSource" />
+          <ScalarProperty Name="ProductSource" ColumnName="ProductSource" />
+          <ScalarProperty Name="BrightcoveLink" ColumnName="BrightcoveLink" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="ConcentraID" ColumnName="ConcentraID" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="WBT4_6" ColumnName="WBT4_6" />
+          <ScalarProperty Name="WBT1_3" ColumnName="WBT1_3" />
+          <ScalarProperty Name="STR" ColumnName="STR" />
+          <ScalarProperty Name="OnsiteInstallGuide" ColumnName="OnsiteInstallGuide" />
+          <ScalarProperty Name="SRM" ColumnName="SRM" />
+          <ScalarProperty Name="WLG" ColumnName="WLG" />
+          <ScalarProperty Name="UG" ColumnName="UG" />
+          <ScalarProperty Name="IssueSignature" ColumnName="IssueSignature" />
+          <ScalarProperty Name="Intellifix" ColumnName="Intellifix" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="ProductSelection" ColumnName="ProductSelection" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DocMatrices">
+      <EntityTypeMapping TypeName="MyDatabaseModel.DocMatrix">
+        <MappingFragment StoreEntitySet="DocMatrix">
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="BDP" ColumnName="BDP" />
+          <ScalarProperty Name="BrightcoveLink" ColumnName="BrightcoveLink" />
+          <ScalarProperty Name="Comments" ColumnName="Comments" />
+          <ScalarProperty Name="VideoURL" ColumnName="VideoURL" />
+          <ScalarProperty Name="LinkDocConcentraID" ColumnName="LinkDocConcentraID" />
+          <ScalarProperty Name="QRCodeURL" ColumnName="QRCodeURL" />
+          <ScalarProperty Name="SupplyChainStrategy" ColumnName="SupplyChainStrategy" />
+          <ScalarProperty Name="Languages" ColumnName="Languages" />
+          <ScalarProperty Name="ConcentraPDFID" ColumnName="ConcentraPDFID" />
+          <ScalarProperty Name="ServiceKitPart" ColumnName="ServiceKitPart" />
+          <ScalarProperty Name="DocServiceLevel" ColumnName="DocServiceLevel" />
+          <ScalarProperty Name="DocPartNumber" ColumnName="DocPartNumber" />
+          <ScalarProperty Name="ProductNumber" ColumnName="ProductNumber" />
+          <ScalarProperty Name="DocumentName" ColumnName="DocumentName" />
+          <ScalarProperty Name="DocumentType" ColumnName="DocumentType" />
+          <ScalarProperty Name="DocDiscipline" ColumnName="DocDiscipline" />
+          <ScalarProperty Name="DateFinal" ColumnName="DateFinal" />
+          <ScalarProperty Name="MatrixID" ColumnName="MatrixID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VidLinks">
+      <EntityTypeMapping TypeName="MyDatabaseModel.VidLink">
+        <MappingFragment StoreEntitySet="VidLinks">
+          <ScalarProperty Name="ConcentraDocTitle" ColumnName="ConcentraDocTitle" />
+          <ScalarProperty Name="ConcentraID" ColumnName="ConcentraID" />
+          <ScalarProperty Name="YoutubeLink" ColumnName="YoutubeLink" />
+          <ScalarProperty Name="BrightcoveLink" ColumnName="BrightcoveLink" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="VideoID" ColumnName="VideoID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

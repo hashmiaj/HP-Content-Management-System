@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Database1ModelStoreContainer" CdmEntityContainer="Database1Entities1">
+    <EntitySetMapping Name="TopicLists">
+      <EntityTypeMapping TypeName="Database1Model.TopicList">
+        <MappingFragment StoreEntitySet="TopicList">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="ProductSelection" ColumnName="ProductSelection" />
+          <ScalarProperty Name="Web" ColumnName="Web" />
+          <ScalarProperty Name="Intellifix" ColumnName="Intellifix" />
+          <ScalarProperty Name="IssueSignature" ColumnName="IssueSignature" />
+          <ScalarProperty Name="UG" ColumnName="UG" />
+          <ScalarProperty Name="WLG" ColumnName="WLG" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="ConcentraID" ColumnName="ConcentraID" />
+          <ScalarProperty Name="Link" ColumnName="Link" />
+          <ScalarProperty Name="BrightcoveLink" ColumnName="BrightcoveLink" />
+          <ScalarProperty Name="ProductSource" ColumnName="ProductSource" />
+          <ScalarProperty Name="DocumentSource" ColumnName="DocumentSource" />
+          <ScalarProperty Name="Core" ColumnName="Core" />
+          <ScalarProperty Name="DesignTeamNotes" ColumnName="DesignTeamNotes" />
+          <ScalarProperty Name="ProjectManagerNotes" ColumnName="ProjectManagerNotes" />
+          <ScalarProperty Name="SMEPartnerNotes" ColumnName="SMEPartnerNotes" />
+          <ScalarProperty Name="ProLeEnterprise" ColumnName="ProLeEnterprise" />
+          <ScalarProperty Name="Asset" ColumnName="Asset" />
+          <ScalarProperty Name="DisclosureLevel" ColumnName="DisclosureLevel" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="OwnerPM" ColumnName="OwnerPM" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

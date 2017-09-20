@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyDatabaseModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Database1Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="C__MigrationHistory" EntityType="MyDatabaseModel.C__MigrationHistory" />
+    <EntitySet Name="T1" EntityType="MyDatabaseModel.T1" />
+    <EntitySet Name="CTables" EntityType="MyDatabaseModel.CTable" />
+    <EntitySet Name="TopicLists" EntityType="MyDatabaseModel.TopicList" />
+    <EntitySet Name="DocMatrices" EntityType="MyDatabaseModel.DocMatrix" />
+    <EntitySet Name="VidLinks" EntityType="MyDatabaseModel.VidLink" />
+  </EntityContainer>
+  <EntityType Name="C__MigrationHistory">
+    <Key>
+      <PropertyRef Name="MigrationId" />
+      <PropertyRef Name="ContextKey" />
+    </Key>
+    <Property Name="MigrationId" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ContextKey" Type="String" Nullable="false" MaxLength="300" FixedLength="false" Unicode="true" />
+    <Property Name="Model" Type="Binary" Nullable="false" MaxLength="Max" FixedLength="false" />
+    <Property Name="ProductVersion" Type="String" Nullable="false" MaxLength="32" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="T1">
+    <Key>
+      <PropertyRef Name="DocumentName" />
+    </Key>
+    <Property Name="DocumentName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CollectionId" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Notes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="CTable">
+    <Key>
+      <PropertyRef Name="DocumentName" />
+    </Key>
+    <Property Name="DocumentName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CollectionType" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Language" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CollectionID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CMG" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DisclosureLevel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentTypeDetail" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Regions" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="TopicCategories" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PublicationCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContentTopic" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SearchKeywords" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmbeddedLinks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PublicationDestinations" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductLines" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="OriginalFilename" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BusinessDefinedProperties" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Authors" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ContentVersion" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="VersionLabel" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CollectionMasterID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreationDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ContentUpdateDate" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="TopicList">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProductSelection" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Web" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Intellifix" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IssueSignature" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="UG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="WLG" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="SRM" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="OnsiteInstallGuide" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="STR" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="WBT1_3" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="WBT4_6" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ConcentraID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Link" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BrightcoveLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductSource" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentSource" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Core" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DesignTeamNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProjectManagerNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SMEPartnerNotes" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProLeEnterprise" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Asset" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DisclosureLevel" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Status" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="OwnerPM" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="EmbeddedLinks" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BDP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="AquentGrouping" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Onboarded" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ProductTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="DocMatrix">
+    <Key>
+      <PropertyRef Name="MatrixID" />
+    </Key>
+    <Property Name="MatrixID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DateFinal" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocDiscipline" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DocumentName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ProductNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocPartNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="DocServiceLevel" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ServiceKitPart" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ConcentraPDFID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Languages" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="SupplyChainStrategy" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="QRCodeURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="LinkDocConcentraID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="VideoURL" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BrightcoveLink" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BDP" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ProductName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="VidLink">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Title" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BrightcoveLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="YoutubeLink" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ConcentraID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="ConcentraDocTitle" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

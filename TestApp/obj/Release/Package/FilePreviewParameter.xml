@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="autocip" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="Add write permission to App_Data Folder" description="Add write permission to App_Data folder" value="autocip/App_Data" tags="Hidden">
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp\\App_Data$" />
+  </parameter>
+  <parameter name="ConnectionString-Web.config Connection String" description="" value="(localdb)\MSSQLLocalDB" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ConnectionString']/@connectionString" />
+  </parameter>
+  <parameter name="Database1Entities-Web.config Connection String" description="" value="metadata=res://*/MyModel.csdl|res://*/MyModel.ssdl|res://*/MyModel.msl;provider=System.Data.SqlClient;provider connection string=MyModel.edmx" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Database1Entities']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="DefaultConnection" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\hashmi\\documents\\visual\ studio\ 2015\\Projects\\TestApp\\TestApp\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>
